@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		196C575A896F411992AE49A7 /* ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F71FDCBCB4D462E8A8D7C7B /* ConciseKit.m */; settings = {COMPILER_FLAGS = " "; }; };
+		58C8F4F8F2CE478DA7F55938 /* NSArray+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E249CE809A6F4595A7869BDC /* NSArray+ConciseKit.m */; settings = {COMPILER_FLAGS = " "; }; };
+		74512ABF65574C8A877AA3DD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB7FC475B084B118423536E /* Cocoa.framework */; };
+		BD5868CEAE234137A06D1928 /* NSString+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A2EF9F0022493FA64E2009 /* NSString+ConciseKit.m */; settings = {COMPILER_FLAGS = " "; }; };
+		E2C3206433034DC4BA49DFBF /* NSDictionary+ConciseKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 920A593745AF421C8FA061E0 /* NSDictionary+ConciseKit.m */; settings = {COMPILER_FLAGS = " "; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAF565023EF043E78D896091 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		197141F9597945528BF6768E /* NSArray+ConciseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSArray+ConciseKit.h"; path = "ConciseKit/src/NSArray+ConciseKit.h"; sourceTree = SOURCE_ROOT; };
+		3F71FDCBCB4D462E8A8D7C7B /* ConciseKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConciseKit.m; path = ConciseKit/src/ConciseKit.m; sourceTree = SOURCE_ROOT; };
+		8536DA66ECFE4141B313962E /* NSDictionary+ConciseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ConciseKit.h"; path = "ConciseKit/src/NSDictionary+ConciseKit.h"; sourceTree = SOURCE_ROOT; };
+		86D6BD82A2624FD5A4E69A75 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		872B955E9D7C453A9AD798F1 /* CKSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CKSingleton.h; path = ConciseKit/src/CKSingleton.h; sourceTree = SOURCE_ROOT; };
+		901BF559334B4021923A22F7 /* NSString+ConciseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+ConciseKit.h"; path = "ConciseKit/src/NSString+ConciseKit.h"; sourceTree = SOURCE_ROOT; };
+		920A593745AF421C8FA061E0 /* NSDictionary+ConciseKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ConciseKit.m"; path = "ConciseKit/src/NSDictionary+ConciseKit.m"; sourceTree = SOURCE_ROOT; };
+		9B05C4B255EE49C6A7348E1C /* Pods-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-prefix.pch"; sourceTree = SOURCE_ROOT; };
+		9C537074A5D441E889524282 /* CKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CKMacros.h; path = ConciseKit/src/CKMacros.h; sourceTree = SOURCE_ROOT; };
+		A88A732E113D4EBBBF084785 /* CKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CKAdditions.h; path = ConciseKit/src/CKAdditions.h; sourceTree = SOURCE_ROOT; };
+		A8A2EF9F0022493FA64E2009 /* NSString+ConciseKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+ConciseKit.m"; path = "ConciseKit/src/NSString+ConciseKit.m"; sourceTree = SOURCE_ROOT; };
+		B05F8DB0862549239F90C467 /* Pods-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = SOURCE_ROOT; };
+		C9239C122DCE493C8C48E585 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CBB7FC475B084B118423536E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E249CE809A6F4595A7869BDC /* NSArray+ConciseKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ConciseKit.m"; path = "ConciseKit/src/NSArray+ConciseKit.m"; sourceTree = SOURCE_ROOT; };
+		F3D91CC27C78484F8FE5254A /* ConciseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConciseKit.h; path = ConciseKit/src/ConciseKit.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14B7AB19C50421A937CA064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74512ABF65574C8A877AA3DD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34FBB1CB1C4C4B5793C05441 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7FC475B084B118423536E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7956243EEAD344D49E690037 = {
+			isa = PBXGroup;
+			children = (
+				CAFA2DF8C6B748B39D65A578 /* Pods */,
+				34FBB1CB1C4C4B5793C05441 /* Frameworks */,
+				F109C5F06ADE4F6DB2E68809 /* Products */,
+				8A617DF9B1DD44AAA9C3C6E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A617DF9B1DD44AAA9C3C6E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F361FB425D274AE3AADE7B7D /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CAFA2DF8C6B748B39D65A578 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC12358797804B62BECC62C6 /* ConciseKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC12358797804B62BECC62C6 /* ConciseKit */ = {
+			isa = PBXGroup;
+			children = (
+				A88A732E113D4EBBBF084785 /* CKAdditions.h */,
+				9C537074A5D441E889524282 /* CKMacros.h */,
+				872B955E9D7C453A9AD798F1 /* CKSingleton.h */,
+				F3D91CC27C78484F8FE5254A /* ConciseKit.h */,
+				197141F9597945528BF6768E /* NSArray+ConciseKit.h */,
+				8536DA66ECFE4141B313962E /* NSDictionary+ConciseKit.h */,
+				901BF559334B4021923A22F7 /* NSString+ConciseKit.h */,
+				3F71FDCBCB4D462E8A8D7C7B /* ConciseKit.m */,
+				E249CE809A6F4595A7869BDC /* NSArray+ConciseKit.m */,
+				920A593745AF421C8FA061E0 /* NSDictionary+ConciseKit.m */,
+				A8A2EF9F0022493FA64E2009 /* NSString+ConciseKit.m */,
+			);
+			name = ConciseKit;
+			sourceTree = "<group>";
+		};
+		F109C5F06ADE4F6DB2E68809 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86D6BD82A2624FD5A4E69A75 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F361FB425D274AE3AADE7B7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B05F8DB0862549239F90C467 /* Pods-resources.sh */,
+				9B05C4B255EE49C6A7348E1C /* Pods-prefix.pch */,
+				C9239C122DCE493C8C48E585 /* Pods.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A796438A5D546249949B3AA /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867A971AB69F44A680159EBD /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				1B6C1A2659A941B3BF40B438 /* Sources */,
+				A14B7AB19C50421A937CA064 /* Frameworks */,
+				BAF565023EF043E78D896091 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 86D6BD82A2624FD5A4E69A75 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DEB9965A7C640859BEE2970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = F13B856571464E8892C7A43C /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7956243EEAD344D49E690037;
+			productRefGroup = F109C5F06ADE4F6DB2E68809 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A796438A5D546249949B3AA /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B6C1A2659A941B3BF40B438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196C575A896F411992AE49A7 /* ConciseKit.m in Sources */,
+				58C8F4F8F2CE478DA7F55938 /* NSArray+ConciseKit.m in Sources */,
+				E2C3206433034DC4BA49DFBF /* NSDictionary+ConciseKit.m in Sources */,
+				BD5868CEAE234137A06D1928 /* NSString+ConciseKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52127913756346A38709AD4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9239C122DCE493C8C48E585 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		53297767662C4779B3FD9EB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9239C122DCE493C8C48E585 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				OTHER_LDFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		658B30C0EC6D4D6D95433258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EF417258692848D5AEE73380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		867A971AB69F44A680159EBD /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52127913756346A38709AD4D /* Debug */,
+				53297767662C4779B3FD9EB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F13B856571464E8892C7A43C /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658B30C0EC6D4D6D95433258 /* Debug */,
+				EF417258692848D5AEE73380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DEB9965A7C640859BEE2970 /* Project object */;
+}

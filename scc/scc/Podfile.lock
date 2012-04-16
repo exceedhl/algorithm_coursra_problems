@@ -1,0 +1,5 @@
+PODS:
+  - ConciseKit (0.1.2)
+
+DEPENDENCIES:
+  - ConciseKit
