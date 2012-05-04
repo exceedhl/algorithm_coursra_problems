@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\title{Algorithms Exercises Answers and Notes}
+\author{exceedhl@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Chapter 1}
+
+\subsection{RSA algorithm}
+
+$p$, $q$ are primes, $N=pq$, $N'=(p-1)(q-1)$, $e$ is relatively prime
+to $N'$. $x$ is the plain text and $x \in {0, 1, \ldots, N-1}$.
+
+$N$ and $e$ are public, the encrypted text is:
+\begin{equation}
+  x' = x^e\ rem\ N, \quad
+  x' \in {0, 1, \ldots, N-1}
+\end{equation}
+
+Let 
+\begin{equation}
+  de \equiv 1 \ modulo\ N', \quad
+\end{equation}
+$d$ can be calculated using extended Euclid algorithm.
+
+Then
+\begin{align}
+  & de - 1 = kN'\\
+  & de = kN' + 1\\
+  & x'^d-x = x^{ed} - x = x^{1+k(p-1)(q-1)}-x
+\end{align}
+
+Because $p$, $q$ are primes and $x < N$, so according to Fermat's
+little theorem:
+\begin{align}
+  & x^{p-1} \equiv 1\ modulo\ p\\
+  \Rightarrow & x^{(p-1)k(q-1)} \equiv 1\ modulo\ p\\  
+  & x^{q-1} \equiv 1\ modulo\ q\\
+  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ modulo\ q\\
+  \Rightarrow & x^{(q-1)k(p-1)}-1\ rem\ pq = 0\\
+  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ modulo\ pq\\
+  \Rightarrow & x'^d-x = x^{ed} - x = x^{1+k(p-1)(q-1)}-x\ rem\ pq = 0\\
+  \Rightarrow & x'^d \equiv 1\ modulo\ N
+\end{align}
+
+Because $x^{ed} \equiv x\ modulo\ N$ and $x < N$, we can get $x$ by
+calculating $x'^d\ rem\ N$.
+
+So if we make $N$, $e$ public, keep $d$, $p$, $q$ secret, then we can
+encrypt and decrypt messages using power and rem operations.
+
+Finally, since $x^e\ rem\ N = x'$, and $x'^d\ rem\ N = x$, it is
+obvious that they are bijection functions. 
+
+\subsection{Exercises}
+
+\subsubsection{1.1}
+Consider the biggest possible value of adding three digits in base b:
+$3(b-1)$. The biggest value of two digits in base b is: $b^2-1$. Now
+we just need to prove $b^2-1 \ge 3(b-1)$.
+
+\begin{align}
+  b^2-1-3(b-1) & = b^2-3b+2 \\
+  & = (b-1)(b-2) \\
+  & \ge 0\quad (\forall\ b \ge 2)
+\end{align}
+
+
+\end{document}
+
+
+
