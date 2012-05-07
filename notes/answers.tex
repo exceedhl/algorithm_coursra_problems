@@ -1,12 +1,104 @@
 \documentclass[11pt]{article}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \title{Algorithms Exercises Answers and Notes}
 \author{exceedhl@gmail.com}
+
+\newtheorem{thm}{Theorem}
+\newcommand{\rem}{\ rem\ }
 
 \begin{document}
 \maketitle
 
 \section{Chapter 1}
+
+\subsection{Basic facts about rem}
+
+\begin{thm}
+  Rem operation has the following features: ($a, b \in \mathbb{Z}$)
+  \begin{align}
+    ab \rem N & = a(b \rem N) \rem N \\
+    & = (a \rem N)b \rem N \\
+    & = (a \rem N)(b \rem N) \rem N \\
+    a^b \rem N & = (a \rem N)^b \\
+    (a \pm b) \rem N & = ((a \rem N ) \pm (b \rem N)) \rem N
+  \end{align}
+\end{thm}
+These features are important for solving $a^b \rem N$ problems.
+
+\begin{thm}
+  Suppose $a \equiv b \mod n$ and $c \equiv d \mod n$. Then 
+  \begin{enumerate}
+  \item $a+c \equiv b+d \mod n$
+  \item $ac \equiv bd \mod n$
+  \item $f(a) \equiv f(b) \mod n$ for any polynomial f(x) with integer coefficients.
+  \end{enumerate}
+\end{thm}
+
+\begin{thm}
+  About mod operation:
+  \begin{align}
+    & a \equiv b \mod N, b \equiv c \mod N \\
+    \Rightarrow & a \equiv b \equiv c \mod N
+  \end{align}
+
+  If $p$ is a prime, $a$ is not a multiplicative of $p$, then 
+  \begin{align}
+    & a^{p-1} \equiv 1 \mod p \\
+    \Rightarrow & a^n \rem p = a^{n \rem (p-1)} \rem p \label{eqn:primitive-roots}\\
+    & a^m \equiv 1 \mod p \\
+    \Rightarrow & a^n \rem p = a^{n \rem m} \rem p
+  \end{align}
+\end{thm}
+\eqref{eqn:primitive-roots} is the key to solve $a^{b^c} \rem p$
+problems. 
+
+\begin{thm}
+  If a has a multiplicative inverse modulo N , then this inverse is
+  unique (modulo N).
+\end{thm}
+
+\begin{thm}
+   If a has an inverse modulo b, then b has an inverse modulo a.
+\end{thm}
+
+\subsection{Theorems}
+
+\begin{thm}
+  If $p$, $q$ are primes, and $a$ is not a multiplier of either of
+  them then we have:
+  \begin{equation}
+    a^{(p-1)(q-1)}\equiv 1\ mod\ pq
+  \end{equation}
+\end{thm}
+This is useful in the proof of RSA algorithm.
+
+\begin{thm}
+  If $p$ is a prime, $a$ is an integer, then $GCD(a, p^n) \neq 1$ ($n
+  > 0$ is a integer) if and only if $a=kp$ ($k$ is an integer).
+\end{thm}
+
+\begin{thm}
+  If $p$ is a prime and $a<p$, then there exists $b<p$, so that
+  $ab\equiv 1\ mod\ p$.
+\end{thm}
+\textit{Proof.} According to Fermat's theorem: there exists a
+$a^{-1}$ so that $aa^{-1}\equiv 1\ mod\ p$.
+
+Because $aa^{-1}\ rem\ p = a(a^{-1}\ rem\ p)\ rem\ p$ so ethat there
+exists a $b<p$ so that $ab\equiv 1\ mod\ p$.
+
+This theorem can be used to prove Wilson's theorem:
+\begin{align}
+  (p-1)! \equiv -1 \mod p
+\end{align}
+
+\begin{thm}
+  For any two adjacent Fibonacci numbers $F_n$ and $F_{n+1}$,
+  $GCD(F_{n}, F_{n+1}) = 1$.
+\end{thm}
+
 
 \subsection{RSA algorithm}
 
@@ -21,7 +113,7 @@ $N$ and $e$ are public, the encrypted text is:
 
 Let 
 \begin{equation}
-  de \equiv 1 \ modulo\ N', \quad
+  de \equiv 1 \ mod\ N', \quad
 \end{equation}
 $d$ can be calculated using extended Euclid algorithm.
 
@@ -35,17 +127,17 @@ Then
 Because $p$, $q$ are primes and $x < N$, so according to Fermat's
 little theorem:
 \begin{align}
-  & x^{p-1} \equiv 1\ modulo\ p\\
-  \Rightarrow & x^{(p-1)k(q-1)} \equiv 1\ modulo\ p\\  
-  & x^{q-1} \equiv 1\ modulo\ q\\
-  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ modulo\ q\\
+  & x^{p-1} \equiv 1\ mod\ p\\
+  \Rightarrow & x^{(p-1)k(q-1)} \equiv 1\ mod\ p\\  
+  & x^{q-1} \equiv 1\ mod\ q\\
+  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ mod\ q\\
   \Rightarrow & x^{(q-1)k(p-1)}-1\ rem\ pq = 0\\
-  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ modulo\ pq\\
+  \Rightarrow & x^{(q-1)k(p-1)} \equiv 1\ mod\ pq\\
   \Rightarrow & x'^d-x = x^{ed} - x = x^{1+k(p-1)(q-1)}-x\ rem\ pq = 0\\
-  \Rightarrow & x'^d \equiv 1\ modulo\ N
+  \Rightarrow & x'^d \equiv 1\ mod\ N
 \end{align}
 
-Because $x^{ed} \equiv x\ modulo\ N$ and $x < N$, we can get $x$ by
+Because $x^{ed} \equiv x\ mod\ N$ and $x < N$, we can get $x$ by
 calculating $x'^d\ rem\ N$.
 
 So if we make $N$, $e$ public, keep $d$, $p$, $q$ secret, then we can
@@ -56,7 +148,7 @@ obvious that they are bijection functions.
 
 \subsection{Exercises}
 
-\subsubsection{1.1}
+\subsubsection{e1.1}
 Consider the biggest possible value of adding three digits in base b:
 $3(b-1)$. The biggest value of two digits in base b is: $b^2-1$. Now
 we just need to prove $b^2-1 \ge 3(b-1)$.
@@ -66,6 +158,83 @@ we just need to prove $b^2-1 \ge 3(b-1)$.
   & = (b-1)(b-2) \\
   & \ge 0\quad (\forall\ b \ge 2)
 \end{align}
+
+\subsubsection{e1.26}
+
+According to Feramt's theorem, if $p$ is a prime and $k$ is not a
+multiplier of $p$, then $k^{p-1} \equiv 1\ mod\ p$.
+
+If there are two primes and $k$ is not multiplier of either one, then
+we can have (refer to the proof of RSA algorithm):
+\begin{equation}
+  k^{(p-1)(q-1)} \equiv 1\ mod\ pq
+\end{equation}
+
+Let the least significant digit of $17^{17^{17}}$ is $d$:
+\begin{align}
+  17^{17^{17}} \equiv d\ mod\ 10
+\end{align}
+
+$10=2*5$ so set $p=2$, $q=5$, we just need to find $a$ which is not
+multiplier of $2$ and $5$, then we have $a^4 \equiv 1\ mod\ 10$.
+
+Continuously use this $a^4$ to divide the original number to get $d$.
+
+Let $a=17$, so 
+\begin{align}
+  17^{17^{17}} & \equiv 17^{289} \\
+  & \equiv 17*17^{288} \\
+  & \equiv 17*(17^4)^{72} \\
+  & \equiv 17 \\
+  & \equiv d \ mod\ 10 \\
+  & \Rightarrow\ d=7
+\end{align}
+
+\subsubsection{e1.29}
+
+The problem assumes $x_1 < m,\ x_2 < m$.
+
+(a) is universal hashing function, the proof is same with the IP
+hashing function example.
+
+(b) is not universal. Suppose $(x_1, x_2)$ is different with $(y_1,
+y_2)$ and $x_2$ is different with $y_2$. $h_{a_1, a_2}(x_1, x_2)$
+equals with $h_{a_1, a_2}(y_1, y_2)$ means:
+
+\begin{align}
+  & a_1x_1+a_2x_2 \equiv a_1y_1+a_2y_2 \ mod\ m \\
+  & a_1(x_1-y_1) \equiv a_2(y_1-y_2) \ mod\ m \label{eq:1.29.1}
+\end{align}
+
+Suppose the left side equals to $c$, then if $(y_1-y_2)$ is relative
+prime to $m$, then $a_2$ must be $c(y_1-y_2)^{-1}$.
+
+Because $m=2^k$ is not prime and the number of numbers that are
+relative prime to $m$ is $\phi(m) = \phi(2^k) = 2^k - 2^{k-1}$.
+
+The chance of $(y_1-y_2)$ being relative prime to $m=2^k$ is $1/2$
+because any odd number is relative prime to $2^k$, so the chance of
+\eqref{eq:1.29.1} holding is: $1/2 * 1/(2^k-2^{k-1}) = 1/2^k$.
+
+When $(y_1-y_2)$ is even there exists some $a_2$ to make
+\eqref{eq:1.29.1} hold. For example:
+
+\begin{align}
+  m=2^3=8 \\
+  y_1-y_2=2 \\
+  c=2 \\
+  2 \equiv a_2*2 \ mod\ 8 \\
+  \Rightarrow a_2=5
+\end{align}
+
+So the overall probability of making \eqref{eq:1.29.1} hold is greater
+than $1/2^k = 1/m$.
+
+(c) is not universal. Take an arbitrary $f$, the probability of a number
+$p$'s key being conflict with another's key is $1/(m-1) > 1/m$.
+
+\subsubsection{1.32 Perfect square/power check}
+
 
 
 \end{document}
